@@ -9,9 +9,13 @@ public class Quiz05 {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
 
-		for (int i = 0; i < str.length(); i++) {
-			System.out.print(str.charAt(str.length() - 1 - i));
-		}
+//		for (int i = 0; i < str.length(); i++) {
+//			System.out.print(str.charAt(str.length() - 1 - i));
+//		}
+		
+		StringBuilder builder = new StringBuilder(str);
+		builder.reverse();
+		System.out.println(builder.toString());
 
 	}
 
